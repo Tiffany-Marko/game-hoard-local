@@ -1,4 +1,4 @@
-const Friends = require('./friends');
+// const Friends = require('./friends');
 const Games = require('./games');
 const User = require('./user');
 const Collection = require ('./collection');
@@ -11,7 +11,7 @@ Collection.belongsTo(User, {
 
 Collection.hasMany(Games, {
 });
-Games.belongTo(Collection, {
+Games.belongsTo(Collection, {
 });
 
 User.hasMany(Comments,{
